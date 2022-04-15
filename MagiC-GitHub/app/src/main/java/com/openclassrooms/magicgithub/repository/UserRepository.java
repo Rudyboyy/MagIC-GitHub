@@ -14,15 +14,17 @@ public class UserRepository {
     }
 
     public List<User> getUsers() {
-        // TODO A modifier
-        return null;
+//        Retourne les utilisateurs à la base de données
+        return apiService.getUsers();
     }
 
     public void generateRandomUser() {
-        // TODO A modifier
+//        Ajoute un utilisateur au harsard à la base de données
+        apiService.generateRandomUser();
     }
 
     public void deleteUser(User user) {
-        // TODO A modifier
+//        Supprime un utilisateur de la base de données
+        apiService.deleteUser(user);
     }
 }
